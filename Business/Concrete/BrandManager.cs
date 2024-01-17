@@ -21,7 +21,7 @@ public class BrandManager : IBrandService
         _mapper = mapper;
     }
 
-    public AddBrandResponse Add(AddBrandRequest request)
+    public AddBrandResponse Add(AddBrandResponse request)
     {
         // İş Kuralları
         _brandBusinessRules.CheckIfBrandNameNotExists(request.Name);

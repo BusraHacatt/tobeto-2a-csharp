@@ -18,7 +18,7 @@ public static class ServiceRegistration
 
     public static IMapper Mapper = new MapperConfiguration(cfg =>
     {
-        cfg.CreateMap<AddBrandRequest, Brand>();
+        cfg.CreateMap<AddBrandResponse, Brand>();
         cfg.CreateMap<Brand, AddBrandResponse>();
     }).CreateMapper();
 
